@@ -6,12 +6,12 @@
 bus_t bus = {NULL, NULL, NULL, 0};
 
 /**
-* main - function for monty code interpreter
-* @argc: argument count
-* @argv: argument value
-*
-* Return: 0 on success
-*/
+ * main - function for monty code interpreter
+ * @argc: argument count
+ * @argv: argument value
+ *
+ * Return: 0 on success
+ */
 int main(int argc, char *argv[])
 {
 	char *content;
@@ -20,7 +20,6 @@ int main(int argc, char *argv[])
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
-
 
 	if (argc != 2)
 	{
@@ -48,5 +47,5 @@ int main(int argc, char *argv[])
 	}
 	free_stack(stack);
 	fclose(file);
-return (0);
+	return (0);
 }
